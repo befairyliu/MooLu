@@ -1,8 +1,11 @@
 package com.moolu;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -11,6 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
+    private String url = "http://shouji.baidu.com";
     private Button back;
     private Button refresh;
     private TextView titleView;
@@ -23,7 +27,7 @@ public class MainActivity extends Activity {
 
         init();
 
-        webView.loadUrl("http://www.baidu.com");
+        webView.loadUrl(url);
         webView.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view,String url){
@@ -39,6 +43,7 @@ public class MainActivity extends Activity {
             }
         });
 
+        webView.setDownloadListener(new MyDownload());
         refresh.setOnClickListener(new MyListener());
         back.setOnClickListener(new MyListener());
 
@@ -65,6 +70,20 @@ public class MainActivity extends Activity {
                     break;
             }
 
+        }
+    }
+
+    private class MyDownload implements DownloadListener{
+        @Override
+        public void onDownloadStart(String url, String userAgent, String contentDisposition,
+                                    String mimetype, long contentLength) {
+            //new HttpThread(url).start();
+
+            if(url.endsWith(".apk")){
+                Uri uri = Uri.parse(url);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+            }
         }
     }
 
