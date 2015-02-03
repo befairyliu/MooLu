@@ -23,6 +23,10 @@
             android:name=".HandlerActivity"
             android:label="@string/title_activity_handler" >
         </activity>
+        <activity
+            android:name=".activity.NananActivity"
+            android:label="@string/title_activity_nanan" >
+        </activity>
     </application>
 
 </manifest>

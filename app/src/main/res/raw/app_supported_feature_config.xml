@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<featureList>
+    <feature>
+        <name>image-upload</name>
+        <isSupported>false</isSupported>
+    </feature>
+    <feature>
+        <name>push-notification</name>
+        <isSupported>true</isSupported>
+    </feature>
+    <feature>
+        <name>soft-token</name>
+        <isSupported>true</isSupported>
+    </feature>
+</featureList>

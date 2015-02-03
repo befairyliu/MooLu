@@ -7,5 +7,6 @@
     <string name="back">Back</string>
     <string name="refresh">Refresh</string>
     <string name="title_activity_handler">HandlerActivity</string>
+    <string name="title_activity_nanan">NananActivity</string>
 
 </resources>

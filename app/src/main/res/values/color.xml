@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="menu_text_color">#FFFFFF</drawable>
+    <drawable name="menu_background_color">#BB445C</drawable>
+    <drawable name="font_color_light_black">#525252</drawable>
+    <drawable name="button_font_color_black">#333333</drawable>
+    <drawable name="remider_font_color_black">#969696</drawable>
+    <drawable name="split_color">#999</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <color name="transparent_background_dlg">#40ffffff</color>
+    <drawable name="backdrop">#E5E4E4</drawable>
+    <color name="full_transparent">#00000000</color>
+    <color name="black">#00000000</color>
+</resources>

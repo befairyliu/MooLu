@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.moolu"
-        minSdkVersion 19
+        minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -21,5 +21,15 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/baidumapapi_v3_2_0.jar')
+    compile files('libs/GetuiExt-2.0.3.jar')
+    compile files('libs/GetuiSdk2.3.0.0.jar')
+    compile files('libs/locSDK_4.2.jar')
+    compile files('libs/volley.jar')
+    compile files('libs/jackson-annotations-2.2.0.jar')
+    compile files('libs/jackson-core-2.2.0.jar')
+    compile files('libs/slf4j-android-1.6.1-RC1.jar')
+    compile files('libs/gson-2.1.jar')
+    compile files('libs/jackson-databind-2.2.0.jar')
     compile 'com.android.support:appcompat-v7:21.0.3'
 }
