@@ -9,4 +9,5 @@
     <string name="title_activity_handler">HandlerActivity</string>
     <string name="title_activity_nanan">NananActivity</string>
 
+    <bool name="isSupportOrientationChange">false</bool>
 </resources>

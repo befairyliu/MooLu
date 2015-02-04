@@ -3,6 +3,7 @@ package com.moolu.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
@@ -18,6 +19,7 @@ public class NananActivity extends Activity {
     protected RequestQueue requestQueue = null;
     private final List<AsyncTaskWithCallback<?,?,?>> mRunningTasks = new ArrayList<AsyncTaskWithCallback<?,?,?>>();
     private static LoadingDialog loadingDialog;
+
     public void showDialog(){
         loadingDialog = new LoadingDialog(this,"load");
         loadingDialog.show();
@@ -31,6 +33,7 @@ public class NananActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_nanan);
+        //TODO for Volley class
         requestQueue = Volley.newRequestQueue(this);
         requestQueue.start();
     }
@@ -56,7 +59,7 @@ public class NananActivity extends Activity {
         this.removeTask(task);
     }
 
-    /*public void slideBottomToTop() {
+    public void slideBottomToTop() {
         overridePendingTransition(R.anim.in_bottomtop, 0);
     }
 
@@ -71,10 +74,11 @@ public class NananActivity extends Activity {
     public void slideRightToLeft() {
         overridePendingTransition(R.anim.page_in_rightleft, R.anim.page_out_rightleft);
     }
-    *//**
+
+    /**
      * check whether support orientation change.
      * @return
-     *//*
+    */
     public boolean isSupportOrientationChange() {
         return getResources().getBoolean(R.bool.isSupportOrientationChange);
     }
@@ -92,6 +96,6 @@ public class NananActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
-    }*/
+    }
 
 }
