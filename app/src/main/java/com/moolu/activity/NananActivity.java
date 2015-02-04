@@ -14,6 +14,21 @@ import com.moolu.view.LoadingDialog;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+    【立春】
+    春归，残雪尽。
+    熙风立面，破黄牙。
+
+    梦回家，腊装爸妈忙实无暇。
+    心愿，你去了谁家？
+
+    惜甲午，康乙未。
+    青柳俯下，
+    最爱，康君拨窗弄轻纱。
+
+                     -- 南安
+                     立春 杭州
+*/
 public class NananActivity extends Activity {
 
     protected RequestQueue requestQueue = null;
@@ -97,5 +112,8 @@ public class NananActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
 
 }
