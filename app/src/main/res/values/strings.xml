@@ -10,4 +10,7 @@
     <string name="title_activity_nanan">NananActivity</string>
 
     <bool name="isSupportOrientationChange">false</bool>
+
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="entity_url">http://10.61.213.158:8080/Hyte/config.txt</string>
 </resources>

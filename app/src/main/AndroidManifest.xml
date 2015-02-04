@@ -27,6 +27,10 @@
             android:name=".activity.NananActivity"
             android:label="@string/title_activity_nanan" >
         </activity>
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:label="@string/title_activity_loading" >
+        </activity>
     </application>
 
 </manifest>
