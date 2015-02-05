@@ -9,8 +9,16 @@
     <string name="title_activity_handler">HandlerActivity</string>
     <string name="title_activity_nanan">NananActivity</string>
 
-    <bool name="isSupportOrientationChange">false</bool>
-
     <string name="title_activity_loading">LoadingActivity</string>
     <string name="entity_url">http://10.61.213.158:8080/Hyte/config.txt</string>
+
+    <!-- Values -->
+    <string name="status_default">Not downloaded</string>
+    <string name="status_invalid">Invalid</string>
+    <string name="status_need_update">Need update</string>
+
+
+    <!-- Booleans or Configuration-->
+    <bool name="isSupportOrientationChange">false</bool>
+    <string name="allow_ssl">1</string>
 </resources>

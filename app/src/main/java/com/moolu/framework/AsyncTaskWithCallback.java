@@ -30,7 +30,7 @@ public abstract class AsyncTaskWithCallback<Params, Progress, Result>
     /**
      * Callback for task completion.
      */
-    protected final ActivityCallback comletionCallback;
+    protected final ActivityCallback completionCallback;
     /**
      * Tasks reference.
      */
@@ -65,7 +65,7 @@ public abstract class AsyncTaskWithCallback<Params, Progress, Result>
             throw new IllegalArgumentException("ref must either be ActivityCallback.NO_REF or >= 0");
         }
 
-        this.comletionCallback = callback;
+        this.completionCallback = callback;
         this.taskReference = ref;
     }
 
@@ -73,7 +73,7 @@ public abstract class AsyncTaskWithCallback<Params, Progress, Result>
     protected void onPostExecute(final Result result) {
         //TODO for AsyncTask class
         this.result = result;
-        this.comletionCallback.handleCallback(this,this.taskReference);
+        this.completionCallback.handleCallback(this,this.taskReference);
     }
 
     public final int getRef(){
