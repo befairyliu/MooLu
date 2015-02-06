@@ -113,7 +113,4 @@ public class NananActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
-
 }

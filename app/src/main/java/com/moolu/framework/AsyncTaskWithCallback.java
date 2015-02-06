@@ -69,13 +69,6 @@ public abstract class AsyncTaskWithCallback<Params, Progress, Result>
         this.taskReference = ref;
     }
 
-    @Override
-    protected void onPostExecute(final Result result) {
-        //TODO for AsyncTask class
-        this.result = result;
-        this.completionCallback.handleCallback(this,this.taskReference);
-    }
-
     public final int getRef(){
         return this.taskReference;
     }
@@ -100,4 +93,42 @@ public abstract class AsyncTaskWithCallback<Params, Progress, Result>
     public final String getErrorMessage(){
         return this.error;
     }
+
+    //do some prepare work for background thread, and called by UI thread.
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+    }
+
+    //after onPreExecute function, the function will do in background thread(do some work which cost time).
+    //In this function, could call publishProgress function to show the progress
+    @Override
+    protected Result doInBackground(Params... params) {
+        return null;
+    }
+
+    //after the publishProgress function be called, the onProgressUpdate function would be called in
+    // UI thread to show the progress.
+    @Override
+    protected void onProgressUpdate(Progress... values) {
+        super.onProgressUpdate(values);
+    }
+
+    //after doInBackground function, the onPostExecute function will be call by UI thread, and the
+    // result will be deliver to the UI thread.
+    @Override
+    protected void onPostExecute(final Result result) {
+        //TODO for AsyncTask class
+        this.result = result;
+        this.completionCallback.handleCallback(this,this.taskReference);
+    }
+
+    //There some guide line must be apply for AsyncTask class
+    //
+    //1. the instance of Task must be create in UI thread.
+    //2. execute function must be called in UI thread.
+    //3. do not call onPreExecute(), onPostExecute(Result), doInBackground(Params...) and
+    //   onProgressUpdate(Progress...) function actively.
+    //4. the task only could be executed once, else the exceptions will be throw out.
+
 }

@@ -113,4 +113,6 @@ public class NApplication extends Application{
         String allowSSLStr = getString(R.string.allow_ssl);
         allowAllSSL = "1".equals(allowSSLStr) ? true : false;
     }
+
+    String str = new String();
 }
