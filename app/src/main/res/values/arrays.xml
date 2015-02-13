@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_title">
+        <item >Http</item>
+        <item >Https-有效证书</item>
+        <item >Https-信任所有</item>
+        <item >Https-仅信任自定义证书</item>
+    </string-array>
+    <string-array name="list_url">
+        <item >http://www.baidu.com</item>
+        <item >https://www.google.com.hk</item>
+        <item >https://kyfw.12306.cn/otn/</item>
+    </string-array>
+</resources>

@@ -21,4 +21,13 @@
     <!-- Booleans or Configuration-->
     <bool name="isSupportOrientationChange">false</bool>
     <string name="allow_ssl">1</string>
+
+
+    <!-- start for ssl.cert -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_fetch">Fetch</string>
+    <!-- end for ssl.cert -->
+
+
 </resources>
