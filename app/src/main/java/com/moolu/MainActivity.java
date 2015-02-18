@@ -12,6 +12,27 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
 
+/*
+*          『未曲』
+*
+*        冬已没，马尾远，
+*        烟火入空，花千树。
+*
+*        春檐下，木窗边，
+*        时光折叠，梦潮湿。
+*
+*        故事春风，早已入词，
+*        食指轻轻，乙曲未满。
+*
+*        不懂，不爱，
+*        不惜，不痛。
+*
+*        你为谁等？
+*
+*                    -- 南安
+*                   除夕 杭州
+*
+*/
 public class MainActivity extends Activity {
 
     private String url = "http://shouji.baidu.com";
