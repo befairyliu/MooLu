@@ -1,4 +1,4 @@
-package com.moolu.framework.entity.model;
+package com.moolu.framework.entity;
 
 import android.os.Handler;
 

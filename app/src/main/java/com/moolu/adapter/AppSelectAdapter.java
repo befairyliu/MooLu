@@ -42,6 +42,9 @@ public class AppSelectAdapter extends BaseAdapter{
     private String checkedRadioButton = "";
     private String uncheckedRadioButton = "";
 
+    public void setSelectedPosition(int position){
+        selectedPosition = position;
+    }
     public AppSelectAdapter(Activity context,List<Center> arrayList){
         inflater = LayoutInflater.from(context);
         this.items = arrayList;

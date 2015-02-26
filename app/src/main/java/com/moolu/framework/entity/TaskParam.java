@@ -1,4 +1,7 @@
-package com.moolu.framework.entity.model;
+package com.moolu.framework.entity;
+
+import com.moolu.framework.entity.model.AppUpdateResource;
+import com.moolu.framework.entity.model.WebResource;
 
 /**
  * Created by Nanan on 2/3/2015.

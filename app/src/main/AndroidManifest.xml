@@ -31,6 +31,14 @@
             android:name=".activity.LoadingActivity"
             android:label="@string/title_activity_loading" >
         </activity>
+        <activity
+            android:name=".activity.AppSelectActivity"
+            android:label="@string/title_activity_app_select" >
+        </activity>
+        <activity
+            android:name=".activity.ErrorActivity"
+            android:label="@string/title_activity_error" >
+        </activity>
     </application>
 
 </manifest>

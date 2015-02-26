@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgsecure" >
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_bar_bg_black" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="3dip"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:text="Update Error"
+            android:textStyle="bold"
+            >
+        </TextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/header_bar"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/form_background"
+        >
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:shadowDy="-1"
+            android:gravity="center_vertical"
+            android:shadowRadius="1"
+            android:shadowColor="#FFFFFF"
+            android:clickable="false"
+
+            android:text="asdfasdfasd"
+
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/accept_cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_message"
+        android:layout_marginTop="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"></TextView>
+
+                <Button
+                    android:id="@+id/retry_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/red_btn"
+                    android:text="Retry"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"></TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"></TextView>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -5,7 +5,7 @@ package com.moolu.storage.prefs;
  */
 public final class PrefConstants {
 
-    public final static String PREFS_NAME = "HSBCHybridSharedPrefs";
+    public final static String PREFS_NAME = "MooLuybridSharedPrefs";
     public final static String SOTP_PREFS_NAME = "SOTPValueStore";
     public final static String LAST_MOD_KEY = "lastModified";
     public final static String UUID_KEY = "uuid";

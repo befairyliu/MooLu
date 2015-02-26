@@ -9,19 +9,57 @@
     <string name="title_activity_handler">HandlerActivity</string>
     <string name="title_activity_nanan">NananActivity</string>
 
+    <!-- Titles -->
+    <string name="title_activity_main_browser">MainBrowserActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
     <string name="title_activity_loading">LoadingActivity</string>
-    <string name="entity_url">http://10.61.213.158:8080/Hyte/config.txt</string>
+    <string name="title_activity_app_select">AppSelectActivity</string>
+    <string name="title_activity_app_error">ErrorActivity</string>
+
+    <!-- Labels -->
+    <string name="label_email">email:</string>
+    <string name="label_password">password:</string>
+    <string name="app_select">Please select your center.</string>
+
+    <!-- Hints -->
+    <string name="hint_email">Input your email account.</string>
+    <string name="hint_password">Input your password.</string>
+
+    <!-- Buttons -->
+    <string name="btn_login">Login</string>
 
     <!-- Values -->
     <string name="status_default">Not downloaded</string>
     <string name="status_invalid">Invalid</string>
     <string name="status_need_update">Need update</string>
 
-
-    <!-- Booleans or Configuration-->
+    <!-- Booleans or Configuration -->
     <bool name="isSupportOrientationChange">false</bool>
-    <string name="allow_ssl">1</string>
 
+    <string name="allow_ssl">1</string>
+    <string name="native_app_header">htse-global-v%s</string>
+    <string name="device_type_header">Android %s</string>
+    <string name="entity_url">http://10.61.213.139:8080/MooLu/config.txt</string>
+    <string name="completely">competely</string>
+    <string name="unzip">Unzip now</string>
+    <string name="downloadApp">Download App now</string>
+    <string name="downloadAppMessage">The App can be update,you can download it to have a better experience</string>
+    <string name="buildtitle">NetWork connection error</string>
+    <string name="dialog_fire_missiles">Please check your Internet</string>
+    <string name="sdcarderrortitle">SDcard error</string>
+    <string name="sdcarderrormsg">Can not find SDcard!</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="zipupdatetitle">Zip can update</string>
+    <string name="zipupdateMsg">Do you want to use your mobile network to download zip update to have a better experience</string>
+    <string name="confirmdialogtitle">Confirm Dialog</string>
+    <string name="confirmdialogmsg">Are you sure you want to download by your  mobile network</string>
+    <string name="zipdownloadtitle">Zip download</string>
+    <string name="zipdownloadMsg">It is your first time to use,do you want to download the zip by using your mobile network</string>
+    <string name="zipfirsttitle">Zip download</string>
+    <string name="zipfirstMsg">You are first time to logon in,do you want to download the zip by using your mobile network!</string>
+    <string name="exit">double click to exit</string>
+    <string name="openInbrowner">false</string>
 
     <!-- start for ssl.cert -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -29,5 +67,6 @@
     <string name="action_fetch">Fetch</string>
     <!-- end for ssl.cert -->
 
+    <string name="title_activity_error">ErrorActivity</string>
 
 </resources>
