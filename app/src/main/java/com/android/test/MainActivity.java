@@ -1,4 +1,4 @@
-package com.moolu;
+package com.android.test;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.moolu.R;
 
 /*
 *          『未曲』
@@ -27,7 +29,8 @@ import android.widget.TextView;
 *        不懂，不爱，
 *        不惜，不痛。
 *
-*        你为谁等？
+*        你,
+*        为谁等？
 *
 *                    -- 南安
 *                   除夕 杭州

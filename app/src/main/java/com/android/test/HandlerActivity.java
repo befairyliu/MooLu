@@ -1,9 +1,11 @@
-package com.moolu;
+package com.android.test;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.moolu.R;
 
 
 public class HandlerActivity extends ActionBarActivity {
