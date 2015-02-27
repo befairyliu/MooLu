@@ -120,15 +120,11 @@ public class JsonUtil {
      * Conversion Java object to JSON
      */
     public static <T> String getJsonFromJavaObject(T src){
-
         try {
-
             return getGsonInstance().toJson(src);
-
         } catch (Exception e) {
             Log.error("Get Json from Java object", e);
         }
-
         return null;
     }
 
