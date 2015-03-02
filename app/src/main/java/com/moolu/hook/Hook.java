@@ -13,11 +13,17 @@ import com.moolu.framework.AsyncTaskWithCallback;
 import com.moolu.framework.Constants;
 import com.moolu.framework.NananLog;
 import com.moolu.hook.actions.MooLuAction;
+import com.moolu.hook.resolver.ResolverUI15;
+import com.moolu.http.pack.MultipleProxyTask;
 import com.moolu.http.pack.ProxyJsonTask;
 import com.moolu.http.pack.ProxyResponse;
+import com.moolu.http.pack.ProxyTask;
 import com.moolu.http.proxy.GSPProxyResponse;
+import com.moolu.http.proxy.GspProxyTask;
+import com.moolu.http.proxy.MultipleGSPProxyTask;
 import com.moolu.util.ActivityUtil;
 import com.moolu.util.DeviceUtil;
+import com.moolu.util.ReflectUtil;
 import com.moolu.util.StringUtil;
 
 import org.json.JSONObject;
@@ -189,7 +195,7 @@ public class Hook implements ActivityCallback{
             }
             String[] action=null;
             if(map.get(HookConstants.FUNCTION)!=null){
-                action =ResolverUI15.resolveByFunction(map.get(HookConstants.FUNCTION));
+                action = ResolverUI15.resolveByFunction(map.get(HookConstants.FUNCTION));
             }else{
                 throw new Exception("function name not found!");
             }
@@ -197,12 +203,16 @@ public class Hook implements ActivityCallback{
             if (action == null) {
                 throw new Exception("Hook API not support!");
             }
-            ReflectUtil.invoke(action,context,this,webview,jo,dataValue);
+            ReflectUtil.invoke(action, context, this, webview, jo, dataValue);
         } catch (Exception e) {
             //Log.error("Hook API parameter error for:{}/{}", dataValue, json);
             //Log.error("Set hook data error",e);
             executeHookAPIFailCallJs(webview);
         }
+    }
+
+    public void proxyAPI(String url, String params, String method, String callbackJs, RequestType type) {
+        proxyAPI(null, url, params, method, callbackJs, type);
     }
 
     public void proxyAPI(String taskId, String url, String params, String method, String callbackJs, RequestType type) {
@@ -281,7 +291,7 @@ public class Hook implements ActivityCallback{
     }
 
     public void proxyGspAPI(String url, String params, String headers,String method, String callbackJs){
-        proxyGspAPI(null, url, params, headers,method, callbackJs);
+        proxyGspAPI(null, url, params, headers, method, callbackJs);
     }
 
     //used for handle gsp proxy
