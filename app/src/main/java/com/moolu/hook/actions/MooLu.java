@@ -19,9 +19,9 @@ import java.util.Map;
 /**
  * Created by Nanan on 2/27/2015.
  */
-public class MooClu extends MooGetJsDataAction{
+public class MooLu extends MooGetJsDataAction{
 
-    private final static Logger Log = new NananLog(MooClu.class);
+    private final static Logger Log = new NananLog(MooLu.class);
     private Context context = null;
 
     @Override

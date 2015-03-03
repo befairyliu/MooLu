@@ -4,7 +4,7 @@ package com.moolu.framework;
  * Created by Nanan on 2/3/2015.
  */
 public class Constants {
-    public final static String PAG_TRANSATION = "PageTransation";
+    public final static String PAGE_TRANSATION = "PageTransation";
     public final static String BARCODE_ON_MOBILE = "mobile";
     public final static String BARCODE_ON_TABLET = "tablet";
     public final static String HOMETYPE_WEB="web";

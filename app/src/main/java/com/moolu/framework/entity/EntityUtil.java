@@ -21,8 +21,11 @@ import org.slf4j.Logger;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -286,5 +289,73 @@ public class EntityUtil {
             editor.commit();
             return true;
         }
+    }
+
+    /**
+     * @param configChecksum get from sever
+     * @param localChecksum
+     * @return
+     */
+    public static boolean checkLocalCopyChecksum(String configChecksum, String localChecksum) {
+        if(true){
+            return true;
+        }
+
+        if(configChecksum!=null){
+            configChecksum = configChecksum.toLowerCase().trim();
+        }
+        if(localChecksum!=null){
+            localChecksum=localChecksum.toLowerCase().trim();
+        }
+        if(configChecksum!=null && configChecksum.equals(localChecksum)){
+            //LOG.debug("Entity checksum is same");
+            return true;
+        }else{
+            Log.debug("Entity checksum is not same");
+            Log.debug("config checksum is: {}",configChecksum);
+            Log.debug("localChecksum checksum is: {}",localChecksum);
+            return false;
+        }
+    }
+
+    /**
+     * @param path
+     * @param algorithm e.g. "SHA-512"
+     * @return
+     */
+    public static String getLocalCopyCurrentChecksum(String path,String algorithm) {
+        String checksum = null;
+        FileInputStream fis=null;
+
+        if(!localCopyExist(path)){
+            return null;
+        }
+        try{
+            MessageDigest md = MessageDigest.getInstance(algorithm);
+            fis = new FileInputStream(path);
+            byte[] dataBytes = new byte[1024];
+            int nread = 0;
+            while ((nread = fis.read(dataBytes)) != -1) {
+                md.update(dataBytes, 0, nread);
+            }
+            byte[] mdbytes = md.digest();
+
+            //convert the byte to hex format method 2
+            StringBuffer hexString = new StringBuffer();
+            for (int i=0;i<mdbytes.length;i++) {
+                hexString.append(Integer.toString((mdbytes[i] & 0xff) + 0x100, 16).substring(1));
+
+            }
+            checksum=hexString.toString();
+        }catch(NoSuchAlgorithmException e){
+            Log.error(e.getMessage());
+        }catch(FileNotFoundException e){
+            Log.error(e.getMessage());
+        }catch(IOException e){
+            Log.error(e.getMessage());
+        }finally{
+            IOUtils.close(fis);
+        }
+        return checksum;
     }
 }

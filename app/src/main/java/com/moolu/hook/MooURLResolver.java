@@ -1,7 +1,7 @@
 package com.moolu.hook;
 
 import com.moolu.hook.actions.GetLocaleAction;
-import com.moolu.hook.actions.MooClu;
+import com.moolu.hook.actions.MooLu;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -19,7 +19,7 @@ public class MooURLResolver {
     private final static Map<String, MooURLAction> actionStrategies = new HashMap<String,MooURLAction>();
     static {
         MooURLResolver.actionStrategies.put(HookConstants.GET_LOCALE,new GetLocaleAction());
-        MooURLResolver.actionStrategies.put(HookConstants.TurboEngine,new MooClu());
+        MooURLResolver.actionStrategies.put(HookConstants.TurboEngine,new MooLu());
     }
 
     public static MooURLAction resolve(final String url){

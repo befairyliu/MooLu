@@ -169,7 +169,7 @@ public abstract class MooLuAction {
         return sb.toString();
     }
     public StringBuffer getDataJs(String methodName){
-        StringBuffer sb=new StringBuffer();
+        StringBuffer sb = new StringBuffer();
         sb.append("javascript:window.")
                 .append(HookConstants.HOOK_OBJECT)
                 .append(".")
@@ -177,9 +177,9 @@ public abstract class MooLuAction {
         return sb;
     }
     public String executeDataJs(Map<String,String> map){
-        String datajs=map.get(HookConstants.DATA_JS);
-        String paras=mapToJson(map);
-        StringBuffer sb=getDataJs("setHookData");
+        String datajs = map.get(HookConstants.DATA_JS);
+        String paras = mapToJson(map);
+        StringBuffer sb = getDataJs("setHookData");
         sb.append("(");
         sb.append(datajs).append("()");
         sb.append(",");
@@ -188,7 +188,7 @@ public abstract class MooLuAction {
         return sb.toString();
     }
     public String mapToJson(Map<String,String> map){
-        String json= JsonUtil.getJsonFromJavaObject(map);
+        String json = JsonUtil.getJsonFromJavaObject(map);
         return json;
     }
     public abstract void execute(final Context context,WebView webview,Hook hook);
