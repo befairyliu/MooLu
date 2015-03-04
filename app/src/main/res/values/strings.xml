@@ -68,5 +68,6 @@
     <!-- end for ssl.cert -->
 
     <string name="title_activity_error">ErrorActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
 
 </resources>

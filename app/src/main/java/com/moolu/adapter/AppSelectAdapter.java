@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.moolu.R;
-import com.moolu.application.NApplication;
+import com.moolu.application.MApplication;
 import com.moolu.framework.NananLog;
 import com.moolu.framework.entity.model.Center;
 import com.moolu.framework.entity.model.Entity;
@@ -37,7 +37,7 @@ public class AppSelectAdapter extends BaseAdapter{
     private int textColor = Color.BLACK;
 
     private final static Logger Log = new NananLog(AppSelectAdapter.class);
-    private NApplication application;
+    private MApplication application;
     private String commonsavedLocaleStr;
     private String checkedRadioButton = "";
     private String uncheckedRadioButton = "";
@@ -48,7 +48,7 @@ public class AppSelectAdapter extends BaseAdapter{
     public AppSelectAdapter(Activity context,List<Center> arrayList){
         inflater = LayoutInflater.from(context);
         this.items = arrayList;
-        application = (NApplication)context.getApplication();
+        application = (MApplication)context.getApplication();
         entity = application.getEntity();
         this.mContext = context;
         if(entity == null){

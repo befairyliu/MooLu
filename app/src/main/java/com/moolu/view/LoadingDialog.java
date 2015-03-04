@@ -13,10 +13,10 @@ import com.moolu.R;
  */
 public class LoadingDialog extends ProgressDialog{
     private String message;
-    private LoadingDialog loadingDialog=null;
+    private LoadingDialog loadingDialog = null;
     public LoadingDialog(Context context,String message) {
         super(context,R.style.dialog_not_dim);
-        this.message=message;
+        this.message = message;
     }
 
     public LoadingDialog(Context context, int theme) {
@@ -29,13 +29,11 @@ public class LoadingDialog extends ProgressDialog{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loading_dialog);
         TextView mMsgView = (TextView)findViewById(R.id.message_view);
-        if(message!=null&&message.length()>0){
+        if(message!=null && message.length()>0){
             mMsgView.setVisibility(View.VISIBLE);
             mMsgView.setText(message);
         }else{
             mMsgView.setVisibility(View.GONE);
         }
-
-
     }
 }

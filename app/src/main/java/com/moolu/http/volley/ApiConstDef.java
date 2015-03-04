@@ -9,8 +9,8 @@ import java.util.Hashtable;
  */
 public class ApiConstDef {
     public static Cookie cookie = null;
-    public static String kHostUrl = "http://10.61.213.156:8080/";  //localhost_homestead 9220
-    public static String ApiRootUrl=kHostUrl+"api/v1/";
+    public static String kHostUrl = "http://10.61.213.156:8080/";  //localhost_homestead 8080
+    public static String ApiRootUrl = kHostUrl+"api/v1/";
     public static final int loginType = 0;
 
     public static final int getuiRegisterType = 1;

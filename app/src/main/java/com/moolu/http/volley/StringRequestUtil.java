@@ -15,10 +15,14 @@ import java.util.Map;
  * Created by Nanan on 3/4/2015.
  */
 public class StringRequestUtil {
-    public static StringRequest getStringRequest(final int type, final Map<String, String> map,
-                                                 Response.Listener<String> listener, Response.ErrorListener errorListener) {
+
+    public static StringRequest getStringRequest(final int type,
+                                                 final Map<String, String> map,
+                                                 Response.Listener<String> listener,
+                                                 Response.ErrorListener errorListener) {
+
         return new StringRequest(Request.Method.POST, ApiConstDef.getApiUrl(type, null)
-                ,  listener, errorListener) {
+                ,listener, errorListener) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 map.put(ApiConstDef.CALLBACK_MARK, String.valueOf(type));
@@ -43,7 +47,6 @@ public class StringRequestUtil {
             JSONObject json = new JSONObject(response);
             callbackMark = json.optString(ApiConstDef.CALLBACK_MARK);
         } catch (JSONException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return callbackMark;

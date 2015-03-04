@@ -21,7 +21,7 @@ import java.io.File;
 /**
  * Created by Nanan on 2/4/2015.
  */
-public class NApplication extends Application{
+public class MApplication extends Application{
     //TODO for LocationClient, GeofenceClient and RequestQueue;
 
     public LocationClient mLocationClient;
@@ -69,7 +69,7 @@ public class NApplication extends Application{
         SDKInitializer.initialize(getApplicationContext());
     }
 
-    private void setLocationListener(BDLocationListener listener){
+    public void setLocationListener(BDLocationListener listener){
         mLocationClient.registerLocationListener(listener);
     }
 

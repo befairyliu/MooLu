@@ -6,7 +6,7 @@ import android.os.Build;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 
-import com.moolu.application.NApplication;
+import com.moolu.application.MApplication;
 import com.moolu.framework.Constants;
 import com.moolu.framework.NananLog;
 import com.moolu.hook.HookConstants;
@@ -102,7 +102,7 @@ public class MooLuHttpClient {
     private MooLuHttpClient(Context context){
         try{
             this.context = context.getApplicationContext();
-            NApplication application = (NApplication)this.context;
+            MApplication application = (MApplication)this.context;
             allowAllSSL = application.isAllowAllSSL();
             String cookiePolicy = application.getCookiePolicy();
             this.cookiePolicy = getCookiePolicy(cookiePolicy);

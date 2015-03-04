@@ -6,7 +6,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 import com.moolu.R;
-import com.moolu.application.NApplication;
+import com.moolu.application.MApplication;
 import com.moolu.framework.NananLog;
 import com.moolu.framework.entity.model.Center;
 import com.moolu.framework.entity.model.Entity;
@@ -46,7 +46,7 @@ public class EntityUtil {
     private long entityDuration = 100;//3600*1*1000;// 1 hours
     //private long entityDuration = 60*1*1000;// 1 min
     private final String ENTITY_FILE_NAME = "entitylist.xml";
-    private NApplication application;
+    private MApplication application;
     public static final BlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(1);
 
     public EntityUtil(){

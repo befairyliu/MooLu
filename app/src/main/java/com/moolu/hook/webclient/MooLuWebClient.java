@@ -13,7 +13,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 
-import com.moolu.application.NApplication;
+import com.moolu.application.MApplication;
 import com.moolu.framework.Constants;
 import com.moolu.framework.NananLog;
 import com.moolu.hook.Hook;
@@ -48,7 +48,7 @@ public class MooLuWebClient extends WebViewClient {
         this.mHook = hook;
         this.progressDialogRef = progressDialogRef;
         this.noConnectionDialogRef = noConnectionDialogRef;
-        this.allowAllSSL = ((NApplication)owningActivity.getApplication()).isAllowAllSSL();
+        this.allowAllSSL = ((MApplication)owningActivity.getApplication()).isAllowAllSSL();
         this.linearLayout = linearLayout;
     }
 

@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.moolu.R;
-import com.moolu.application.NApplication;
+import com.moolu.application.MApplication;
 import com.moolu.framework.Constants;
 import com.moolu.framework.entity.AppProcessor;
 import com.moolu.framework.entity.EntityUtil;
@@ -22,13 +22,13 @@ public class ErrorActivity extends NananActivity implements View.OnClickListener
     private Button button;
     private TextView textView;
     Intent intent;
-    private NApplication application;
+    private MApplication application;
     private AppProcessor resourceProcessor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_error);
-        application = (NApplication)getApplication();
+        application = (MApplication)getApplication();
         button = (Button)findViewById(R.id.retry_button);
         textView = (TextView)findViewById(R.id.tv_message);
         intent = getIntent();

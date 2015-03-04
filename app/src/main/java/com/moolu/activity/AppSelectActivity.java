@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import com.moolu.R;
 import com.moolu.adapter.AppSelectAdapter;
-import com.moolu.application.NApplication;
+import com.moolu.application.MApplication;
 import com.moolu.framework.Constants;
 import com.moolu.framework.entity.EntityUtil;
 import com.moolu.framework.entity.model.Center;
@@ -23,7 +23,7 @@ public class AppSelectActivity extends ActionBarActivity {
 
     private ListView mAppLv;
     private AppSelectAdapter mAppSelectAdapter;
-    private NApplication nApplication;
+    private MApplication mApplication;
     private Dialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +38,8 @@ public class AppSelectActivity extends ActionBarActivity {
 
     private void initLv() {
         mAppLv = (ListView) findViewById(R.id.lv_main);
-        nApplication = (NApplication) getApplication();
-        mAppSelectAdapter = new AppSelectAdapter(AppSelectActivity.this,nApplication.getEntity().getCenter());
+        mApplication = (MApplication) getApplication();
+        mAppSelectAdapter = new AppSelectAdapter(AppSelectActivity.this, mApplication.getEntity().getCenter());
         mAppLv.setAdapter(mAppSelectAdapter);
         mAppSelectAdapter.notifyDataSetChanged();
         mAppLv.setOnItemClickListener(onItemClickListener);
@@ -54,7 +54,7 @@ public class AppSelectActivity extends ActionBarActivity {
                 dialog = new Dialog(AppSelectActivity.this, R.style.FullHeightDialog);
                 dialog.setContentView(R.layout.download_progress_dialog);
             }else{
-                Center app = nApplication.getEntity().getCenter().get(position);
+                Center app = mApplication.getEntity().getCenter().get(position);
                 //SharePrefenceUtil.saveHashCode(app,AppSelectActivity.this);
                 SharePrefenceUtil.putValue(AppSelectActivity.this, Constants.ISFIRSTTIMELOGON, Constants.FIRSTTIMELOGON);
                 EntityUtil.setCurrentApp(AppSelectActivity.this, app);

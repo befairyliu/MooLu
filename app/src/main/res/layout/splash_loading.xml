@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/loading_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="35dp" >
+
+        <!--<ImageView
+            android:id="@+id/splash_logo"
+            android:layout_width="@dimen/splash_logo_and_progress_bar_width"
+            android:layout_height="50dp"
+            android:layout_gravity="top|center"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/hsbc_logo_black_splash" />-->
+
+        <com.moolu.view.ProgressSpinner
+            android:id="@+id/splashloadingSpinner"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:visibility="visible"
+            android:src="@anim/loading_spinner" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -39,6 +39,14 @@
             android:name=".activity.ErrorActivity"
             android:label="@string/title_activity_error" >
         </activity>
+        <activity
+            android:name=".activity.account.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.MainBrowserActivity"
+            android:label="@string/title_activity_main_browser" >
+        </activity>
     </application>
 
 </manifest>
