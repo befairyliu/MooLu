@@ -38,7 +38,7 @@ public class PushReveiver extends BroadcastReceiver{
                 String cid = bundle.getString("clientid");
                 Log.debug("GetuiSDKDemo","Get ClientID:"+cid);
                 bindClientID(context,cid);
-                //// TODO:
+                //// to do something...
                 /* 第三方应用需要将ClientID上传到第三方服务器，并且将当前用户帐号和ClientID进行关联，
                 以便以后通过用户帐号查找ClientID进行消息推送。有些情况下ClientID可能会发生变化，为保证获取最新的ClientID，
                 请应用程序在每次获取ClientID广播后，都能进行一次关联绑定 */

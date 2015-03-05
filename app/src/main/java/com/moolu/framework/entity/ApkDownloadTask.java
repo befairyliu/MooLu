@@ -5,6 +5,7 @@ import android.os.Handler;
 import com.moolu.activity.NananActivity;
 import com.moolu.framework.ActivityCallback;
 import com.moolu.framework.AsyncTaskWithCallback;
+import com.moolu.util.DownloadUtil;
 
 import org.apache.http.client.ClientProtocolException;
 
@@ -33,7 +34,11 @@ public class ApkDownloadTask extends AsyncTaskWithCallback<TaskParam,Void,TaskPa
             if(url == null){
                 throw new Exception("Download apk failure !");
             } else{
-                //TODO...
+                DownloadUtil downloadUtil=new DownloadUtil(context,this);
+                boolean isSuccess=downloadUtil.downloadResourceAndSave(url,downloadPath,apkName,handler,0);
+                if(!isSuccess){
+                    throw new Exception("download apk file fail");
+                }
             }
         } catch(ClientProtocolException e){
             this.setError(FAILED);

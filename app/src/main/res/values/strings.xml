@@ -69,5 +69,7 @@
 
     <string name="title_activity_error">ErrorActivity</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_baidu_map">BaiduMapActivity</string>
+    <string name="title_activity_launch_test">LaunchTestActivity</string>
 
 </resources>

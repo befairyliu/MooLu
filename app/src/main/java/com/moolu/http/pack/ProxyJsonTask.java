@@ -20,26 +20,24 @@ import java.util.List;
 /**
  * Created by Nanan on 2/27/2015.
  */
-public class ProxyJsonTask implements AsyncTaskWithCallback<String,Void,ProxyResponse>{
+public class ProxyJsonTask extends AsyncTaskWithCallback<String,Void,ProxyResponse>{
 
     private final Context context;
     private final static Logger Log = new NananLog(ProxyJsonTask.class);
 
     public ProxyJsonTask(final Context context, final ActivityCallback callback, final int ref) {
-        //TODO...
-        /*super(callback, ref);
+        super(callback, ref);
         if (context == null) {
             throw new IllegalArgumentException("owner must not be null");
-        }*/
+        }
         this.context=context;
     }
     @Override
     protected ProxyResponse doInBackground(String... params) {
-        // TODO....
-        ProxyResponse proxyRsp=new ProxyResponse();
+        ProxyResponse proxyRsp = new ProxyResponse();
         JSONObject jsonHeaders = null;
 
-        /*try{
+        try{
             if(params!=null&&params.length==5){
                 String url=params[0];//url, params, method, callbackJs, headers
                 String urlPara=params[1];
@@ -50,8 +48,8 @@ public class ProxyJsonTask implements AsyncTaskWithCallback<String,Void,ProxyRes
                     jsonHeaders = new JSONObject(headers);
                 }
                 proxyRsp.setCallbackJs(callbackJs);
-                StringBuffer sf=null;
-                TitanHttpClient httpClient = TitanHttpClient.getInstance(this.context);
+                StringBuffer sf = null;
+                MooLuHttpClient httpClient = MooLuHttpClient.getInstance(this.context);
                 Log.debug("send request:"+url);
                 Log.debug("send request parameters:"+urlPara);
                 if(method!=null&&method.toUpperCase().equals(Constants.REQUEST_POST)){
@@ -61,7 +59,7 @@ public class ProxyJsonTask implements AsyncTaskWithCallback<String,Void,ProxyRes
                     proxyRsp.setResponseStr(sf);
                     return proxyRsp;
                 }else if(method!=null&&method.toUpperCase().equals(Constants.REQUEST_GET)){
-                    urlPara=StringUtil.getGetParaFromJson(urlPara);
+                    urlPara = StringUtil.getParaFromJson(urlPara);
                     if(urlPara!=null){
                         if(url!=null&&url.indexOf("?")!=-1){
                             url=url+"&"+urlPara;
@@ -72,7 +70,7 @@ public class ProxyJsonTask implements AsyncTaskWithCallback<String,Void,ProxyRes
                     if(url.indexOf(" ")!=-1){
                         url=url.replaceAll(" ", "%20");
                     }
-                    sf= httpClient.connectURL(url, null, jsonHeaders);
+                    sf = httpClient.connectURL(url, null, jsonHeaders);
                     proxyRsp.setResponseStr(sf);
                     return proxyRsp;
                 }else{
@@ -85,7 +83,6 @@ public class ProxyJsonTask implements AsyncTaskWithCallback<String,Void,ProxyRes
             Log.error("Proxy error!",e);
             this.setError(FAILED,e.getMessage());
         }
-        */
         return proxyRsp;
     }
 
@@ -114,4 +111,5 @@ public class ProxyJsonTask implements AsyncTaskWithCallback<String,Void,ProxyRes
         }
         return null;
     }
+
 }

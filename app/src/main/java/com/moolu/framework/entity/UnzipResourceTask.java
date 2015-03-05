@@ -23,7 +23,8 @@ public class UnzipResourceTask extends AsyncTaskWithCallback<TaskParam, Void, Ta
     private final NananActivity context;
     private Handler handler;
 
-    public UnzipResourceTask(final NananActivity context, final ActivityCallback callback, final int ref, Handler handler){
+    public UnzipResourceTask(final NananActivity context, final ActivityCallback callback,
+                             final int ref, Handler handler){
         super(callback,ref);
         if(context == null){
             throw new IllegalArgumentException("owner must not be null");

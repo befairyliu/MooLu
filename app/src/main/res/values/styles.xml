@@ -5,10 +5,9 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="dialog_not_dim" parent="android:style/Theme.Dialog">
-        <!-- CG Luke Le added for UI Enhancement start [2014-06-06] -->
         <!-- <item name="android:windowBackground">@drawable/loading_bg</item> -->
         <item name="android:windowBackground">@drawable/transparent_background</item>
-        <!-- CG Luke Le added for UI Enhancement end [2014-06-06] -->
+
         <item name="android:backgroundDimEnabled">false</item><!--activity not dim-->
         <item name="android:windowNoTitle">true</item>
     </style>
@@ -22,14 +21,14 @@
         <!--<item name="android:windowContentOverlay">@null</item>-->
         <item name="android:background">@null</item>
         <item name="android:backgroundDimEnabled">false</item>
-
-
-        <!--<item name="android:windowNoTitle">true</item>
+        <!--
+        <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@color/full_transparent</item>
         <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:backgroundDimEnabled">false</item>-->
+        <item name="android:backgroundDimEnabled">false</item>
+        -->
     </style>
     <style name="ProgressBarTheme" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:maxHeight">50dip</item>

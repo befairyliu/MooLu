@@ -152,14 +152,12 @@ public class LoadingActivity extends NananActivity implements ActivityCallback{
                             ActivityUtil.startAppSelectActivity(this);
                             finish();
                         }else{
-                            //TODO....
-                            //resourceProcessor.compareToDownloadZip(result,this);
+                            resourceProcessor.compareToDownloadZip(result,this);
                             //finish();
                         }
 
                     } else {
-                        //TODO....
-                        //resourceProcessor.prepareToAppDownload(this,result);
+                        resourceProcessor.prepareToAppDownload(this,result);
                         // finish();
                     }
                 } else {
