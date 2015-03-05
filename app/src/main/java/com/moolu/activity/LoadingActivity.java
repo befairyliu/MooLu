@@ -3,11 +3,7 @@ package com.moolu.activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
 import com.moolu.R;
 import com.moolu.application.MApplication;
 import com.moolu.framework.ActivityCallback;
@@ -26,7 +22,6 @@ import com.moolu.util.SharePrefenceUtil;
 import com.moolu.util.StringUtil;
 
 import org.slf4j.Logger;
-import org.slf4j.Marker;
 
 public class LoadingActivity extends NananActivity implements ActivityCallback{
 
@@ -59,7 +54,7 @@ public class LoadingActivity extends NananActivity implements ActivityCallback{
         setContentView(R.layout.activity_loading);
 
          /*for test html*/
-        if("true".equals(getResources().getString(R.string.openInbrowner))){
+        /*if("true".equals(getResources().getString(R.string.openInbrowner))){
             Intent intent = new Intent(this, MainBrowserActivity.class);
             intent.putExtra("path", "");
             this.startActivity(intent);
@@ -77,7 +72,7 @@ public class LoadingActivity extends NananActivity implements ActivityCallback{
                     startAppFlow();
                 }
             }
-        }
+        }*/
         /*for test html*/
     }
 
@@ -177,28 +172,4 @@ public class LoadingActivity extends NananActivity implements ActivityCallback{
             Log.error("handleEntityCallback error", e);
         }
     }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_loading, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
 }
