@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<entityList>
+    <entity id="862" headerImg="default" hometype="app">
+		<supportedDevices>
+			<device name="Android"/>
+		</supportedDevices>
+			<localised locale="en" name="Core Test - DEV1" shortname="UK" default="true"/>
+		<configurl>https://www1.qualityassurance.fileupload.asiapacific.hsbc.com/imageAttach/forMobileTeam/coreTest/dev1/config_json_Android_coreTest1.txt</configurl>
+	</entity>
+	<entity id="998" headerImg="default" hometype="app">
+		<supportedDevices>
+			<device name="Android"/>
+		</supportedDevices>
+		<localised locale="en" name="registration" 
+		    shortname="HK"  default="true"/>
+		<configurl>https://www1.qualityassurance.fileupload.asiapacific.hsbc.com/imageAttach/forMobileTeam/coreTest/dev2/config_json_Android_coreTest2.txt</configurl>
+	</entity>
+	<entity id="004" headerImg="default" hometype="app">
+		<supportedDevices>
+			<device name="Android" />
+		</supportedDevices>
+		<localised locale="en" name="Canada No68 android"
+			shortname="HK" default="true" />
+		<localised locale="fr" name="Canada No68 ces"
+			shortname="HK" default="false" />
+		<configurl>http://10.61.213.156:8080/Server/android_config.txt</configurl>
+	</entity>
+	<entity id="691" headerImg="default" hometype="app">
+		<supportedDevices>
+			<device name="Android" />
+		</supportedDevices>
+		<localised locale="en" name="Canada NA320 App1.5.7 - registration"
+			shortname="CA" default="true" />
+		<localised locale="fr" name="Canada NA320 App1.5.7 - eTransfer"
+			shortname="CA" default="false" />
+		<configurl>https://euromobile:L4s4gn4@uatint-content.firstdirect.com/mobile/config/UK/PIB/mobile/UK-PIB-SAAS-IDV-UAT(EU566)/config.json</configurl>
+	</entity>
+	<entity id="999" headerImg="default" hometype="app">
+		<supportedDevices>
+			<device name="Android" />
+		</supportedDevices>
+		<localised locale="en" name="MSP 1.5 Android App"
+			shortname="HK" default="true" />
+		<localised locale="zh_TW" name="Mobile 1.5 Android App P2P Test"
+			shortname="HK" default="false" />
+		<localised locale="zh_CN" name="Mobile 1.5 Android App P2P Test"
+			shortname="HK" default="false" />
+		<localised locale="el_GR" name="Mobile 1.5 Android GR"
+			shortname="HK" default="false" />
+		<localised locale="hy_AM" name="Mobile 1.5 Android AM"
+			shortname="HK" default="false" />
+		<localised locale="es_AR" name="Mobile 1.5 Android ES"
+			shortname="HK" default="false" />
+		<configurl>http://10.61.213.156:8080/Server/android_config.txt</configurl>
+	</entity>
+	<global>
+		<moreCountriesNote>
+			<enable>true</enable>
+		</moreCountriesNote>
+		<localeItem>
+			<locale code="ar" rtl="true">
+				<desc>العربية</desc>
+			</locale>
+			<locale code="en" rtl="false">
+				<desc>English</desc>
+			</locale>
+			<locale code="pt" rtl="false">
+				<desc>Português</desc>
+			</locale>
+			<locale code="zh_CN" rtl="false">
+				<desc>简体</desc>
+			</locale>
+			<locale code="zh_TW" rtl="false">
+				<desc>繁體</desc>
+			</locale>
+			<locale code="vi" rtl="false">
+				<desc>Tiếng Việt</desc>
+			</locale>
+			<locale code="fr" rtl="false">
+				<desc>Français</desc>
+			</locale>
+			<locale code="in" rtl="false">
+				<desc>Bahasa Indonesia</desc>
+			</locale>
+			<locale code="tr" rtl="false">
+				<desc>Türkçe</desc>
+			</locale>
+		</localeItem>
+		<domainList>
+			<domain>hsbc.co.uk</domain>
+			<domain>hsbc.com</domain>
+			<domain>hsbc.com.hk</domain>
+			<domain>hsbcamanah.com</domain>
+			<domain>hsbc.com.au</domain>
+			<domain>hsbc.com.my</domain>
+			<domain>hsbc.ca</domain>
+			<domain>hsbc.com.bn</domain>
+			<domain>hsbc.com.sg</domain>
+			<domain>hsbc.ae</domain>
+			<domain>hsbcamanah.com.my</domain>
+			<domain>hsbc.com.bh</domain>
+			<domain>hsbc.co.om</domain>
+			<domain>hsbc.jo</domain>
+			<domain>hsbc.com.qa</domain>
+			<domain>hsbc.com.vn</domain>
+			<domain>sabb.com</domain>
+			<domain>hsbc.com.cn</domain>
+			<domain>hsbc.com.eg</domain>
+			<domain>hsbc.fr</domain>
+			<domain>hsbc.com.lb</domain>
+			<domain>hsbc.com.ph</domain>
+			<domain>hsbc.lk</domain>
+			<domain>hsbc.co.id</domain>
+			<domain>hsbc.com.br</domain>
+			<domain>hsbc.com.tr</domain>
+			<domain>hsbc.co.in</domain>
+			<domain>hsbc.com.tw</domain>
+		</domainList>
+		<eula>
+			<alwaysEnable>false</alwaysEnable>
+			<enable>false</enable>
+			<appUpdateEnable>false</appUpdateEnable>
+			<eulaItem>
+				<localised locale="ar">
+					<latest>1.2</latest>
+					<version code="1.1">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>End User License Agreement1.1</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/mobile/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/mobile/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/mobile/version1.1/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/tablet/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/tablet/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/tablet/version1.1/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+					<version code="1.2">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>End User License Agreement1.2</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/mobile/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/mobile/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/mobile/version1.2/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/tablet/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/tablet/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/ar/pages/tablet/version1.2/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+				</localised>
+				<localised locale="en">
+					<latest>1.2</latest>
+					<version code="1.1">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>End User License Agreement1.1</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/mobile/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/mobile/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/mobile/version1.1/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/tablet/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/tablet/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/tablet/version1.1/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+					<version code="1.2">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>End User License Agreement1.2</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/mobile/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/mobile/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/mobile/version1.2/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/tablet/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/tablet/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pages/tablet/version1.2/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+				</localised>
+				<localised locale="pt">
+					<latest>1.2</latest>
+					<version code="1.1">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>Licença de Uso para o Usuário Final 1.1</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/mobile/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/mobile/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/mobile/version1.1/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/tablet/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/tablet/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/tablet/version1.1/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+					<version code="1.2">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>Licença de Uso para o Usuário Final 1.2</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/mobile/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/mobile/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/mobile/version1.2/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/tablet/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/tablet/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/pt/pages/tablet/version1.2/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+				</localised>
+				<localised locale="fr">
+					<latest>1.2</latest>
+					<version code="1.1">
+						<noticeperiod>2013-07-15 00:00:00GMT</noticeperiod>
+						<desc>Contrat de Licence d’Utilisateur Final1.1</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/mobile/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/mobile/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/mobile/version1.1/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/tablet/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/tablet/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/tablet/version1.1/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+					<version code="1.2">
+						<noticeperiod>2013-07-15 00:00:00GMT</noticeperiod>
+						<desc>Contrat de Licence d’Utilisateur Final1.2</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/mobile/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/mobile/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/mobile/version1.2/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/tablet/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/tablet/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/fr/pages/tablet/version1.2/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+				</localised>
+				<localised locale="zh_CN">
+					<latest>1.1</latest>
+					<version code="1.1">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>终端用户许可协议NEW</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/mobile/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/mobile/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/mobile/version1.1/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/tablet/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/tablet/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/tablet/version1.1/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+					<version code="1.2">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>终端用户许可协议1.2</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/mobile/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/mobile/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/mobile/version1.2/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/tablet/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/tablet/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_CN/pages/tablet/version1.2/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+				</localised>
+				<localised locale="zh_TW">
+					<latest>1.1</latest>
+					<version code="1.1">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>終端用戶許可協議NEW</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/mobile/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/mobile/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/mobile/version1.1/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/tablet/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/tablet/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/tablet/version1.1/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+					<version code="1.2">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>終端用戶許可協議1.2</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/mobile/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/mobile/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/mobile/version1.2/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/tablet/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/tablet/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/zh_TW/pages/tablet/version1.2/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+				</localised>
+				<localised locale="vi">
+					<latest>1.1</latest>
+					<version code="1.1">
+						<noticeperiod>2013-07-25 00:00:00GMT</noticeperiod>
+						<desc>HỢP ĐỒNG CẤP QUYỀN SỬ DỤNG CHO NGƯỜI SỬ DỤNG NEW</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/mobile/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/mobile/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/mobile/version1.1/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/tablet/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/tablet/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/tablet/version1.1/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+					<version code="1.2">
+						<noticeperiod>2013-07-27 00:00:00GMT</noticeperiod>
+						<desc>HỢP ĐỒNG CẤP QUYỀN SỬ DỤNG CHO NGƯỜI SỬ DỤNG 1.2</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/mobile/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/mobile/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/mobile/version1.2/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/tablet/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/tablet/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/vi/pages/tablet/version1.2/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+				</localised>
+				<localised locale="in">
+					<latest>1.1</latest>
+					<version code="1.1">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>Perjanjian Lisensi Pengguna Akhir1.1</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/mobile/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/mobile/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/mobile/version1.1/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/tablet/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/tablet/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/tablet/version1.1/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+					<version code="1.2">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>Perjanjian Lisensi Pengguna Akhir1.2</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/mobile/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/mobile/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/mobile/version1.2/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/tablet/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/tablet/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/id/pages/tablet/version1.2/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+				</localised>
+				<localised locale="tr">
+					<latest>1.1</latest>
+					<version code="1.1">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>Son Kullanıcı Lisans Anlaşması NEW</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/mobile/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/mobile/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/mobile/version1.1/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/tablet/version1.1/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/tablet/version1.1/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/tablet/version1.1/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+					<version code="1.2">
+						<noticeperiod>2013-07-14 00:00:00GMT</noticeperiod>
+						<desc>Son Kullanıcı Lisans Anlaşması 1.2</desc>
+						<phone>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/mobile/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/mobile/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/mobile/version1.2/eula.html?page=read
+							</url>
+						</phone>
+						<tablet>
+							<url desc="agree">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/tablet/version1.2/eula.html?page=agree
+							</url>
+							<url desc="notice">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/tablet/version1.2/eula.html?page=notice
+							</url>
+							<url desc="read">https://DWSRTB01GSHK:Pr0tectDWSRTB01GSHK@services.qualityassurance.mobile.hsbc.com:30001/tr/pages/tablet/version1.2/eula.html%3Fpage%3Dread
+							</url>
+						</tablet>
+					</version>
+				</localised>
+			</eulaItem>
+		</eula>
+		<disclosure>
+			<enable>true</enable>
+			<disclosureItem>
+				<localised locale="ar">
+					<title>الوصول إلى دول أخرى</title>
+					<message>.اختر الدولة التي يوجد فيها منتج HSBC الذي ترغب بالوصول
+						إليه. بإمكانك تغيير الدول في حال كان لديك منتجات من HSBC في أكثر
+						من دولة واحدة. قد يتم تغيير الشروط والأحكام وسياسة الخصوصية التي
+						تطبق على استخدامك لهذا التطبيق عندما تبدل الدولة
+					</message>
+				</localised>
+				<localised locale="en">
+					<title>ACCESSING OTHER COUNTRIES</title>
+					<message>Choose the country where the HSBC product you want to
+						access is held. You can change countries if you have HSBC products
+						in more than one country. The terms and conditions and privacy
+						policy that apply to your use of this app may change when you
+						switch country.
+					</message>
+				</localised>
+				<localised locale="pt">
+					<title>ACESSAR OUTROS PAÍSES</title>
+					<message>Selecione o país em que você contratou seus produtos ou
+						serviços. Caso você tenha contratado produtos e serviços do HSBC
+						em mais de 1 país, você poderá alterar sua escolha posteriormente.
+						Os termos e políticas de uso deste serviço serão alterados
+						conforme sua seleção.
+					</message>
+				</localised>
+				<localised locale="zh_TW">
+					<title>選擇其他國家</title>
+					<message>請依照您所欲選用之滙豐產品所在地選擇國家，若您在一個以上的國家持有滙豐的產品，您可以變更國家選擇，而使用本應用程式之相關之條款及細則及隱私權政策
+						/ 私隱政策將依您所選國家的不同而有所變動。
+					</message>
+				</localised>
+				<localised locale="zh_CN">
+					<title>选择其他国家</title>
+					<message>请依照您所欲选用之汇丰产品所在地选择国家，若您在一个以上的国家持有汇丰的产品，您可以变更国家选择，而使用本应用程序之相关之条款及细则及隐私权政策
+						/ 私隐政策将依您所选国家的不同而有所变动。
+					</message>
+				</localised>
+				<localised locale="in">
+					<title>Mengakses negara lain</title>
+					<message>Pilih negara dimana Anda memiliki produk yang ingin Anda
+						akses. Anda dapat memilih negara manapun dimana Anda memiliki
+						produk HSBC di negara terkait. Syarat dan ketentuan serta
+						kebijakan privasi penggunaan aplikasi ini mengikuti ketentuan yang
+						berlaku di negara yang Anda pilih.
+					</message>
+				</localised>
+				<localised locale="vi">
+					<title>TRUY CẬP TÀI KHOẢN Ở QUỐC GIA KHÁC</title>
+					<message>Vui lòng chọn quốc gia nơi HSBC có cung cấp sản phẩm Quý
+						khách đang sử dụng. Quý khách có thể thay đổi quốc gia nếu sử dụng
+						sản phẩm của HSBC tại nhiều quốc gia khác nhau. Khi Quý khách
+						chuyển sang quốc gia khác, có thể có những thay đổi về các điều
+						khoản và điều kiện cũng như quy định bảo mật áp dụng khi Quý khách
+						dùng ứng dụng này.
+					</message>
+				</localised>
+				<localised locale="tr">
+					<title>DİĞER ÜLKELERE ERİŞİM</title>
+					<message>HSBC ürün/hizmetlerine ulaşmak istediğiniz ülkeyi seçiniz.
+						Birden fazla ülkede HSBC'den hizmet alıyorsanız ülke seçiminizi
+						değiştirebilirsiniz. Ülke seçiminizi değiştirmenize istinaden,
+						mobil uygulama kullanımız ile ilgili hükümler, koşullar ve
+						gizlilik politikaları değişebilir.
+					</message>
+				</localised>
+				<localised locale="fr">
+					<title>Accès à l'app HSBC d'autres pays</title>
+					<message>Veuillez choisir le pays où se trouvent les comptes HSBC
+						que vous désirez consulter. Vous pouvez changer de pays si vous
+						détenez des comptes HSBC ailleurs dans le monde. Les mentions
+						légales qui s'appliquent à l'utilisation de votre application
+						varient lorsque vous changez de pays.
+					</message>
+				</localised>
+			</disclosureItem>
+		</disclosure>
+	</global>
+</entityList>

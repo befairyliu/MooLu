@@ -54,7 +54,7 @@ public class LoadingActivity extends NananActivity implements ActivityCallback{
         setContentView(R.layout.activity_loading);
 
          /*for test html*/
-        /*if("true".equals(getResources().getString(R.string.openInbrowner))){
+        if("true".equals(getResources().getString(R.string.openInbrowner))){
             Intent intent = new Intent(this, MainBrowserActivity.class);
             intent.putExtra("path", "");
             this.startActivity(intent);
@@ -72,7 +72,7 @@ public class LoadingActivity extends NananActivity implements ActivityCallback{
                     startAppFlow();
                 }
             }
-        }*/
+        }
         /*for test html*/
     }
 
