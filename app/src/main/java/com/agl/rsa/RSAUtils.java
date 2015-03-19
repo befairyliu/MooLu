@@ -1,20 +1,32 @@
 package com.agl.rsa;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
 import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigInteger;
 import java.security.KeyFactory;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.Signature;
+import java.security.UnrecoverableKeyException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 import java.security.spec.X509EncodedKeySpec;
+import java.util.Enumeration;
 import java.util.HashMap;
 
 import javax.crypto.Cipher;
@@ -23,7 +35,8 @@ public class RSAUtils {
 
     public static final String KEY_ALG = "RSA";
     public static final String PADDING_MODE = "RSA/ECB/PKCS1PADDING";
-    public static final String SIGNATURE_ALG = "SHA1withRSA";
+    //public static final String SIGNATURE_ALG = "SHA1withRSA";
+    public static final String SIGNATURE_ALG = "SHA256withRSA";
     public static final int KEY_SIZE = 1024;
     /**
      * 生成公钥和私钥
@@ -204,6 +217,100 @@ public class RSAUtils {
         //验证
         return signature.verify(sign);
     }
+
+
+    //-----------------------load rsa-key part-------------------
+    /**
+     * get private key from file
+     *
+     * @throws KeyStoreException
+     * @throws IOException
+     * @throws CertificateException
+     * @throws NoSuchAlgorithmException
+     * @throws UnrecoverableKeyException
+     *
+     */
+    public static PrivateKey loadPriKey(String path,String password) throws KeyStoreException,
+            NoSuchAlgorithmException, CertificateException, IOException, UnrecoverableKeyException {
+
+        KeyStore ks = KeyStore.getInstance("PKCS12");
+        FileInputStream fis = new FileInputStream(path);
+        //check the password
+        if(password.trim().equals("")){
+            password = null;
+        }
+
+        ks.load(fis, password.toCharArray());
+        fis.close();
+        Enumeration<String> enumeration = ks.aliases();
+        String keyAlias = null;
+        if(enumeration.hasMoreElements()){
+            keyAlias = enumeration.nextElement();
+        }
+
+        return (PrivateKey) ks.getKey(keyAlias, password.toCharArray());
+
+    }
+
+    /**
+     * get public key from file
+     *
+     * @throws IOException
+     * @throws CertificateException
+     */
+    public static PublicKey loadPubKey(String path) throws IOException, CertificateException{
+
+        InputStream in = new FileInputStream(path);
+        byte[] buff = new byte[4000];
+        int n;
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        while((n = in.read(buff)) != -1){
+            out.write(buff,0,n);
+        }
+        in.close();
+        byte[] pubKeyBytes = out.toByteArray();
+        out.close();
+
+        CertificateFactory cf = CertificateFactory.getInstance("X509");
+        Certificate cert = cf.generateCertificate(new ByteArrayInputStream(pubKeyBytes));
+
+        return cert.getPublicKey();
+    }
+
+    /*
+    //--other way to get private key from file
+    public static PrivateKey getPriKey(String filename)
+    		  throws Exception {
+
+	    File f = new File(filename);
+	    FileInputStream fis = new FileInputStream(f);
+	    DataInputStream dis = new DataInputStream(fis);
+	    byte[] keyBytes = new byte[(int)f.length()];
+	    dis.readFully(keyBytes);
+	    dis.close();
+
+	    PKCS8EncodedKeySpec spec =
+	      new PKCS8EncodedKeySpec(keyBytes);
+	    KeyFactory kf = KeyFactory.getInstance("RSA");
+	    return kf.generatePrivate(spec);
+	}
+
+    public static PublicKey getPubKey(String filename)
+    	    throws Exception {
+
+	    File f = new File(filename);
+	    FileInputStream fis = new FileInputStream(f);
+	    DataInputStream dis = new DataInputStream(fis);
+	    byte[] keyBytes = new byte[(int)f.length()];
+	    dis.readFully(keyBytes);
+	    dis.close();
+
+	    X509EncodedKeySpec spec =
+	      new X509EncodedKeySpec(keyBytes);
+	    KeyFactory kf = KeyFactory.getInstance("RSA");
+	    return kf.generatePublic(spec);
+	}
+	*/
 
     /**
      * ASCII码转BCD码
