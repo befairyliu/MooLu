@@ -82,7 +82,7 @@ public class LoadingActivity extends NananActivity implements ActivityCallback{
         if (!StringUtil.IsNullOrEmpty(currentAppId)) {
             startAppInitFlow(currentAppId);
 
-        } else {
+        } else {;
             Intent intent = new Intent(this, AppSelectActivity.class);
             startActivity(intent);
             this.slideBottomToTop();
